@@ -9,14 +9,20 @@
         // a.forEach(function(arg){
         //    document.write(arg+"<br>"); 
         // });
-
+       var b=[10,30,40,50,60];
+          var c=b.filter(check);
+          function check(p) {
+              if (p>=18)
+              return true;
+          }
+          document.write(c+"<br>");
      var a={
          fname:'naved',
          lname:'siddiki',
          contact:439389034,
          email:'navedsiddiki7@gmail.com',
          call:function(){
-             document.write("You Just Called Me!");
+             document.write("You Just Called Me ");
              return this.fname;
          },
          marks:[20,30,40,50,60],
@@ -29,7 +35,7 @@
      document.write("last name is:"+a.lname+"<br>");     
      document.write("contact number is:"+a.contact+"<br>");     
      document.write("email address is:"+a.email+"<br>");         
-     document.write(a.call());   
+     document.write(a.call()+"!");   
      document.write("<br> Your Marks Is "+a.marks);    
      document.write("<br> Your Skill is "+a.record.skill);
      document.write("<br> Your first year's age is "+a.record.ages[0]);
